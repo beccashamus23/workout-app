@@ -26,7 +26,7 @@
   position:absolute;
   right: 25px;
 }
-.workout-form {
+.goal-form {
   position: relative;
   color: #191919;
   font-size: 20px;
@@ -64,11 +64,10 @@ textarea {
   color: black;
   
 }
-.add-workout {
+.add-goal {
   position: relative;
   margin-right: 900px;
 }
-
 
 .carousel {
   background-color: white;
@@ -84,7 +83,7 @@ textarea {
   background-color: ivory;
 }
 
-.workouts-list {
+.goals-list {
   position: relative;
 }
 

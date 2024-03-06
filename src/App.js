@@ -1,6 +1,6 @@
 import React from 'react';
 import LogIn from './LogIn';
-import Workouts from './Workouts';
+import Goals from './Goals';
 import './App.css';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import logo from './homepic.png';
@@ -11,10 +11,10 @@ const Home = () => (
     <img className = "homeImg" src={logo} alt = "logo" />
     <div className='buttonGroup'>
       <button className="customButton">Explore</button>
-      <Link to="/Workouts">
-        <button className="customButton">Workouts</button>
+      <Link to="/Goals">
+        <button className="customButton">Goals</button>
       </Link>
-      <button className="customButton">Goals</button>
+      <button className="customButton">Workouts</button>
     </div>
     <Link to="/LogIn">
       <button className="loginButton">Log In</button>
@@ -28,7 +28,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Routes>
-            <Route path="/Workouts" element={<Workouts />} />
+            <Route path="/Goals" element={<Goals />} />
             <Route path="/LogIn" element={<LogIn />} />
             <Route path="/" element={<Home />} />
           </Routes>
