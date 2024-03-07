@@ -4,6 +4,7 @@ import Goals from './Goals';
 import './App.css';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import logo from './homepic.png';
+import Workouts from './Workouts';
 
 const Home = () => (
   <div>
@@ -14,7 +15,9 @@ const Home = () => (
       <Link to="/Goals">
         <button className="customButton">Goals</button>
       </Link>
+      <Link to="/Workouts">
       <button className="customButton">Workouts</button>
+      </Link>
     </div>
     <Link to="/LogIn">
       <button className="loginButton">Log In</button>
@@ -30,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/Goals" element={<Goals />} />
             <Route path="/LogIn" element={<LogIn />} />
+            <Route path="/Workouts" element={<Workouts />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </header>

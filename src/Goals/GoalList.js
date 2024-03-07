@@ -9,15 +9,17 @@ const GoalList = ({
 }) => {
 	return (
 		<div className='goals-list'>
-			{goals.map((goal) => (
-				<Goal
-					id={goal.id}
-					text={goal.text}
-					date={goal.date}
-					handleDeleteGoal={handleDeleteGoal}
-					handleCompleteGoal={handleCompleteGoal}
-				/>
-			))}
+			<div className='goals-container'>
+				{goals.map((goal) => (
+					<Goal
+						id={goal.id}
+						text={goal.text}
+						date={goal.date}
+						handleDeleteGoal={handleDeleteGoal}
+						handleCompleteGoal={handleCompleteGoal}
+					/>
+				))}
+			</div>
 			<AddGoal handleAddGoal={handleAddGoal} />
 		</div>
 	);

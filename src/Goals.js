@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import GoalsList from './Goals/GoalList';
+import { Link } from 'react-router-dom';
 
 const Goals = () => {
 	const [goals, setGoals] = useState([
@@ -47,13 +48,15 @@ const Goals = () => {
 
 	return (
 		<div>
-				<GoalsList
-					goals={goals}
-					handleAddGoal={addGoal}
-					handleDeleteGoal={deleteGoal}
-					handleCompleteGoal={completeGoal}
-				/>
-
+			<Link to="/">
+                <button className="loginButton">Home</button>
+            </Link>
+			<GoalsList
+				goals={goals}
+				handleAddGoal={addGoal}
+				handleDeleteGoal={deleteGoal}
+				handleCompleteGoal={completeGoal}
+			/>
 		</div>
 	);
 };
