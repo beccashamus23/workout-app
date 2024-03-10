@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
-import GoalsList from './Goals/GoalList';
+import GoalsList from './GoalsPage/GoalList';
 import { Link } from 'react-router-dom';
 
 const Goals = () => {

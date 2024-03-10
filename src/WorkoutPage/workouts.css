@@ -1,0 +1,158 @@
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  .button-style {
+    height: 20px;
+    width: 20px;
+  }
+  .radioButtons {
+    font-size: 18px;
+    font-family: TT Interphases;
+    font-style: italic;
+    list-style: none;
+    position: relative;
+  }
+  /*.workouts-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  */
+
+  .textBox {
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    font-family: TT Interphases;
+    width: 150px;
+    height: 30px;
+  }
+  /*
+  .buttonGroup {
+    margin-top: 200px;
+    position:absolute;
+    right: 25px;
+    
+  }*/
+
+  input {
+    width: 250px;
+    height: 50px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    font-family: TT Interphases;
+    font-style: italic;
+    font-size: 15px;
+    color: black;
+    position: relative;
+  }
+
+ 
+  .video-list > div {
+    flex: 0 0 18%; /* Adjust the width of each video container */
+    cursor: pointer;
+  }
+  
+  .video-list img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .workout-list {
+    font-size: 18px;
+    color:red;
+    font-family: TT Interphases;
+    font-style: italic;
+    list-style: none;
+    position: relative;
+  }
+  
+  .workout-results {
+    color: white;
+
+  }
+
+  .customButton {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    border: 0.5px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: TT Interphases;
+    font-size: 18px;
+    font-weight: 200;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+
+  .customButton:hover {
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.3);
+  }
+  .customButtonReversed {
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    border: 0.3px solid black;
+    border-radius: 25px;
+    color: black;
+    font-family: TT Interphases;
+    font-size: 18px;
+    font-weight: 200;
+    width: 50;
+    height: 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+  .li {
+    display: inline-block;
+  }
+  
+  .App-header {
+    background-color: #191919;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #191919;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  

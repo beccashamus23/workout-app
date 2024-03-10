@@ -3,7 +3,7 @@ import LogIn from './LogIn';
 import Goals from './Goals';
 import './App.css';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import logo from './homepic.png';
+import logo from './Images/homepic.png';
 import Workouts from './Workouts';
 
 const Home = () => (

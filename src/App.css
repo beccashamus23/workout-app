@@ -62,15 +62,26 @@ textarea {
   font-style: italic;
   font-size: 15px;
   color: black;
-  
 }
+.video-list {
+  
+  font-size: 12px;
+  font-family: TT Interphases;
+  font-style: italic;
+	list-style: none;
+	padding-top: 20px;
+}
+.workout-list {
+  font-size: 18px;
+  font-family: TT Interphases;
+  font-style: italic;
+}
+
 .add-goal {
   position: relative;
   margin-right: 900px;
 }
-.carousel {
-  background-color: red;
-}
+
 .workout-results {
   color: white;
 }
@@ -126,7 +137,9 @@ textarea {
   text-decoration: none;
   transition-duration: 0.4s;
 }
-
+.li {
+  display: inline-block;
+}
 .homeImg {
   top: 0px;
   right: 0px;

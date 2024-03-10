@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import CreateUser from './User/CreateUser';
+import CreateUser from './UsersPage/CreateUser';
 
 export default function LogIn () {
     return (
