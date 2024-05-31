@@ -1,5 +1,4 @@
-import React from "react";
-import { Flex, Container, Box, Image, VStack } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 import AuthForm from "./AuthForm";
 
 // DEFINES STYLE OF SIGN IN
