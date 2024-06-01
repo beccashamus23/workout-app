@@ -10,10 +10,9 @@ const AuthForm = () => {
     confirmPassword: "",
   });
   const handleAuth = () => {
-    if (input.email && input.password && input.confirmPassword) {
+    if (input.email && input.password) {
       navigate("/");
     }
-    return;
   };
   return (
     <>
@@ -57,15 +56,9 @@ const AuthForm = () => {
           </Button>
         </VStack>
       </Box>
-      <Box
-        border={"1px solid gray"}
-        borderRadius={4}
-        padding={3}
-        mt={2}
-        className="text-white"
-      >
+      <Box border={"1px solid gray"} borderRadius={4} padding={3} mt={2}>
         <Flex alignItems={"center"} justifyContent={"center"}>
-          <Box mx={2} fontSize={14}>
+          <Box mx={2} fontSize={14} color="white">
             {isLogin ? "Don't have an account?" : "Already have an account?"}
           </Box>
           <Box
