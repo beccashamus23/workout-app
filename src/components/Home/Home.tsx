@@ -30,36 +30,22 @@ function Home() {
 
   return (
     <>
-      <div className="py-4 w-64 h-screen bg-white bg-opacity-20">
-        <img src={logo} alt="logo" className="z=1 w-30 h-12 pl-3"></img>
-        <div className="text-center text-white ">
-          <img
-            src={profpic}
-            className="mx-auto bg-white flex justify-center items-center rounded-full my-4 h-16 w-16"
-          ></img>
-          <Link to="/Goals">GOALS</Link>
-          <h1>WORKOURS</h1>
-          <h1>RECIPIES</h1>
-          <button onClick={addPost}>ADD POST</button>
-        </div>
-
-        <Grid
-          h="350px"
-          templateRows="repeat(2, 1fr)"
-          templateColumns="repeat(4, 1fr)"
-          gap={4}
-        >
-          {posts.map((post, index) => (
-            <GridItem key={index} colSpan={1} bg="white">
-              <div>
-                <img src={post.imgUrl} alt={post.caption} />
-                <p>{post.caption}</p>
-                <button onClick={() => deletePost(post.id)}>Delete</button>
-              </div>
-            </GridItem>
-          ))}
-        </Grid>
-      </div>
+      <Grid
+        h="350px"
+        templateRows="repeat(2, 1fr)"
+        templateColumns="repeat(4, 1fr)"
+        gap={4}
+      >
+        {posts.map((post, index) => (
+          <GridItem key={index} colSpan={1} bg="white">
+            <div>
+              <img src={post.imgUrl} alt={post.caption} />
+              <p>{post.caption}</p>
+              <button onClick={() => deletePost(post.id)}>Delete</button>
+            </div>
+          </GridItem>
+        ))}
+      </Grid>
     </>
   );
 }

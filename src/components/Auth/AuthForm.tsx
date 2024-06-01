@@ -17,7 +17,7 @@ const AuthForm = () => {
   };
   return (
     <>
-      <Box>
+      <Box className="text-white">
         <VStack>
           <Input
             placeholder="Email"
@@ -44,10 +44,26 @@ const AuthForm = () => {
               }
             />
           ) : null}
-          <Button onClick={handleAuth}>{isLogin ? "Log in" : "Sign Up"}</Button>
+          <Button
+            onClick={handleAuth}
+            my={1}
+            h={6}
+            bg="gray.900"
+            border="1px"
+            borderColor="white"
+            color="white"
+          >
+            {isLogin ? "LOG IN" : "SIGN UP"}
+          </Button>
         </VStack>
       </Box>
-      <Box border={"1px solid gray"} borderRadius={4} padding={5}>
+      <Box
+        border={"1px solid gray"}
+        borderRadius={4}
+        padding={3}
+        mt={2}
+        className="text-white"
+      >
         <Flex alignItems={"center"} justifyContent={"center"}>
           <Box mx={2} fontSize={14}>
             {isLogin ? "Don't have an account?" : "Already have an account?"}
