@@ -18,15 +18,3 @@ function App() {
 }
 
 export default App;
-
-/*
-TS: 40:00
-import PageLayout from "./Layouts/PageLayout/PageLayout";
-
-<PageLayout>
-			<Routes>
-				<Route path='/' element={authUser ? <HomePage /> : <Navigate to='/auth' />} />
-				<Route path='/auth' element={!authUser ? <AuthPage /> : <Navigate to='/' />} />
-				<Route path='/:username' element={<ProfilePage />} />
-			</Routes>
-		</PageLayout>*/

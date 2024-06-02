@@ -1,15 +1,16 @@
-import { Grid, GridItem } from "@chakra-ui/react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "./logo.png";
-import profpic from "./profileicon.png";
+import { Box, Container } from "@chakra-ui/react";
+import Posts from "../Posts/Posts";
 
-interface Post {
-  id: number;
-  caption: string;
-  imgUrl: string;
-}
-
+const Home = () => {
+  return (
+    <Container maxW={"container.lg"}>
+      <Box flex={2} py={10} border="2px">
+        <Posts />
+      </Box>
+    </Container>
+  );
+};
+/*
 function Home() {
   const [posts, setPosts] = useState<Post[]>([]);
 
@@ -48,5 +49,5 @@ function Home() {
       </Grid>
     </>
   );
-}
+}*/
 export default Home;

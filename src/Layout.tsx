@@ -7,7 +7,7 @@ const Layout = ({ children }: any) => {
   return (
     <Flex>
       {pathname !== "/auth" ? (
-        <Box className="py-4 w-64 h-screen bg-white bg-opacity-20 rounded-lg hover:bg-sky-200 hover:bg-opacity-20 border">
+        <Box>
           <SideBar />
         </Box>
       ) : null}

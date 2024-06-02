@@ -6,6 +6,12 @@ import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import "./assets/Fonts.css";
+
+const fonts = {
+  body: "Rounded, sans-serif, mont",
+  heading: "Rounded, sans-serif, mont",
+};
 
 const styles = {
   global: (props: any) => ({
@@ -21,7 +27,7 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config, styles });
+const theme = extendTheme({ config, styles, fonts });
 
 ReactDOM.render(
   <React.StrictMode>

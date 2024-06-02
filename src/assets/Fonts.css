@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Rounded';
+    src: url("../../public/SimplyRounded.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: 'RoundedBold';
+    src: url("../../public/SimplyRoundedBold.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: 'Mont';
+    src: url("../../public/Montserrat.ttf") format('truetype');
+  }
