@@ -1,4 +1,4 @@
-import { Flex, Image, Link, Button } from "@chakra-ui/react";
+import { Flex, Link, Text, Avatar, Box } from "@chakra-ui/react";
 import exampleProfilepic from "../../../public/postExample.png";
 const PostHeader = () => {
   return (
@@ -9,14 +9,27 @@ const PostHeader = () => {
       w={"full"}
     >
       <Flex alignItems={"center"} gap={2}>
-        <Image
+        <Avatar
           src={exampleProfilepic}
           borderRadius="full"
           boxSize="50px"
-        ></Image>
-        <Link color={"white"}>username</Link>
+        ></Avatar>
+        <Flex>
+          <Link color={"gray.200"}>username</Link>
+          <Box color={"gray.200"} pl={3}>
+            1w
+          </Box>
+        </Flex>
       </Flex>
-      <Button>unfollow</Button>
+      <Box>
+        <Text
+          color={"gray.200"}
+          _hover={{ color: "blue.500" }}
+          transition={"0.2s ease-in-out"}
+        >
+          unfollow
+        </Text>
+      </Box>
     </Flex>
   );
 };
