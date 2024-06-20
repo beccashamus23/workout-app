@@ -1,9 +1,10 @@
 //import Goals from "../Goals/Goals";
-import logo from "../Home/logo.png";
+//import logo from "../Home/logo.png";
 import profpic from "../Home/profileicon.png";
+import logoAlt from "../../../public/logoAlternate.png";
 import { Link, Box, Image, Flex } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import mont from "../../assets/Fonts";
+//import mont from "../../assets/Fonts";
 
 const SideBar = () => {
   return (
@@ -11,8 +12,10 @@ const SideBar = () => {
       border="4px"
       borderColor="whiteAlpha.300"
       className="py-4 w-64 h-screen rounded-lg"
+      h="100vw"
+      maxH="100%"
     >
-      <img src={logo} alt="logo" className="z=1 w-30 h-12 pl-3"></img>
+      <img src={logoAlt} alt="logo" className="z=1 w-50 h-20 pl-3"></img>
       <Image
         src={profpic}
         my={6}
@@ -21,7 +24,7 @@ const SideBar = () => {
       <Flex
         direction={"column"}
         className="text-white text-xl"
-        fontFamily="mont"
+        //fontFamily="mont"
         gap={8}
         marginStart={4}
         w="full"
