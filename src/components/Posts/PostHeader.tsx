@@ -13,7 +13,7 @@ const PostHeader = ({ username, avatar }: PostHeaderProps) => {
       <Flex alignItems={"center"} gap={2}>
         <Avatar src={avatar} borderRadius="full" boxSize="50px" />
         <Flex>
-          <Link color={"gray.200"}>{username}</Link>
+          <Link color={"gray.200"}>@{username}</Link>
           <Box color={"gray.200"} pl={3}>
             1w
           </Box>
@@ -25,7 +25,7 @@ const PostHeader = ({ username, avatar }: PostHeaderProps) => {
           _hover={{ color: "blue.500" }}
           transition={"0.2s ease-in-out"}
         >
-          unfollow
+          ...
         </Text>
       </Box>
     </Flex>

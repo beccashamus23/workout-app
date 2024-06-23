@@ -16,7 +16,9 @@ import {
   FaRegBookmark,
 } from "react-icons/fa";
 
-const PostFooter = () => {
+type PostFooterProps = { username: string };
+
+const PostFooter = ({ username }: PostFooterProps) => {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(0);
   const [saved, setSaved] = useState(false);
@@ -73,7 +75,7 @@ const PostFooter = () => {
       </Text>
       <Flex fontSize={14} fontFamily={"sans-serif"}>
         <Text textColor={"gray.200"} mr={2} as={"b"}>
-          daily_workout
+          {username}
         </Text>
         <Text textColor={"gray.200"}>today's workout!</Text>
       </Flex>

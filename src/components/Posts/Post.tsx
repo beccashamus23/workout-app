@@ -21,7 +21,7 @@ const Post = ({ username, imgUrl, avatar }: PostProps) => {
         border="1px"
         borderColor="gray.200"
       />
-      <PostFooter />
+      <PostFooter username={username} />
     </Container>
   );
 };

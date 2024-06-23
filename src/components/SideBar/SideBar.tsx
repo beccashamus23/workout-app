@@ -1,5 +1,3 @@
-//import Goals from "../Goals/Goals";
-//import logo from "../Home/logo.png";
 import profpic from "../Home/profileicon.png";
 import logoAlt from "../../../public/logoAlternate.png";
 import { Link, Box, Image, Flex } from "@chakra-ui/react";
@@ -45,7 +43,7 @@ const SideBar = () => {
         <Link display={"flex"} to={"/Goals"} as={RouterLink}>
           GOALS
         </Link>
-        <Link display={"flex"} to={"/Goals"} as={RouterLink}>
+        <Link display={"flex"} to={"/Workouts"} as={RouterLink}>
           WORKOUTS
         </Link>
         <Link display={"flex"} to={"/Goals"} as={RouterLink}>
