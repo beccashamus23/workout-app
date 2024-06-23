@@ -1,4 +1,4 @@
-import { Image, Container } from "@chakra-ui/react";
+import { Image, Flex } from "@chakra-ui/react";
 import PostHeader from "./PostHeader";
 import PostFooter from "./PostFooter";
 
@@ -10,19 +10,11 @@ type PostProps = {
 
 const Post = ({ username, imgUrl, avatar }: PostProps) => {
   return (
-    <Container w={500}>
+    <Flex w={550} direction={"column"}>
       <PostHeader username={username} avatar={avatar} />
-      <Image
-        src={imgUrl}
-        my={2}
-        overflow={"hidden"}
-        w={"full"}
-        h={"full"}
-        border="1px"
-        borderColor="gray.200"
-      />
+      <Image src={imgUrl} overflow={"hidden"} w={"auto"} h={"auto"} />
       <PostFooter username={username} />
-    </Container>
+    </Flex>
   );
 };
 

@@ -1,6 +1,5 @@
 import {
   Flex,
-  Button,
   Input,
   Box,
   Text,

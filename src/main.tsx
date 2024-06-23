@@ -9,15 +9,15 @@ import { mode } from "@chakra-ui/theme-tools";
 import "./assets/Fonts.css";
 
 const fonts = {
-  body: "Rounded, sans-serif, mont",
-  heading: "Rounded, sans-serif, mont",
+  body: "Mont, sans-serif, mont",
+  heading: "Mont, sans-serif, mont",
 };
 
 const styles = {
   global: (props: any) => ({
     body: {
       bg: mode("gray.900", "#000")(props),
-      color: mode("gray.800", "whiteAlpha.600")(props),
+      color: mode("whiteAlpha.100", "whiteAlpha.600")(props),
     },
   }),
 };
