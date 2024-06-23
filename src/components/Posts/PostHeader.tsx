@@ -1,6 +1,8 @@
 import { Flex, Link, Text, Avatar, Box } from "@chakra-ui/react";
-import exampleProfilepic from "../../../public/postExample.png";
-const PostHeader = () => {
+
+type PostHeaderProps = { username: string; avatar: string };
+
+const PostHeader = ({ username, avatar }: PostHeaderProps) => {
   return (
     <Flex
       justifyContent={"space-between"}
@@ -9,13 +11,9 @@ const PostHeader = () => {
       w={"full"}
     >
       <Flex alignItems={"center"} gap={2}>
-        <Avatar
-          src={exampleProfilepic}
-          borderRadius="full"
-          boxSize="50px"
-        ></Avatar>
+        <Avatar src={avatar} borderRadius="full" boxSize="50px" />
         <Flex>
-          <Link color={"gray.200"}>username</Link>
+          <Link color={"gray.200"}>{username}</Link>
           <Box color={"gray.200"} pl={3}>
             1w
           </Box>
@@ -33,4 +31,5 @@ const PostHeader = () => {
     </Flex>
   );
 };
+
 export default PostHeader;

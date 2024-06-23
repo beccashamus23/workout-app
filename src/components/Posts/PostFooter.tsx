@@ -1,10 +1,11 @@
 import {
   Flex,
   Button,
+  Input,
   Box,
   Text,
-  Textarea,
   IconButton,
+  InputGroup,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import {
@@ -67,13 +68,27 @@ const PostFooter = () => {
           />
         </Box>
       </Flex>
-      <Text color={"gray.200"}>
+      <Text color={"gray.200"} fontFamily={"sans-serif"}>
         {likes} {likes === 1 ? "like" : "likes"}
       </Text>
-      <Text textColor={"gray.200"}>sample caption</Text>
-
-      <Text textColor={"gray.200"}>view all comments</Text>
-      <Textarea border="1px" placeholder={"add a comment..."}></Textarea>
+      <Flex fontSize={14} fontFamily={"sans-serif"}>
+        <Text textColor={"gray.200"} mr={2} as={"b"}>
+          daily_workout
+        </Text>
+        <Text textColor={"gray.200"}>today's workout!</Text>
+      </Flex>
+      <Box fontSize={14}>
+        <Text fontFamily={"sans-serif"} textColor={"gray.200"}>
+          view all comments
+        </Text>
+        <InputGroup border="1px">
+          <Input
+            fontSize={14}
+            placeholder={"add a comment..."}
+            fontFamily={"sans-serif"}
+          ></Input>
+        </InputGroup>
+      </Box>
     </Box>
   );
 };
