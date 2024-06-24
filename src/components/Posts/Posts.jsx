@@ -2,9 +2,10 @@ import { Container } from "@chakra-ui/react";
 import Post from "./Post";
 import {useState, useEffect} from "react"
 const Posts = () => {
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {setTimeout(() => {setIsLoading(false)}, 2000)}, [])
   return (
-    <Container maxW={"container.sm"} py={10} px={2}>
+    <Container maxW={"container.sm"} alignItems={"center"} py={10}>
       <Post
         imgUrl="../../../public/postExample.png"
         username="fitness_girl"

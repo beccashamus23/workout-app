@@ -12,6 +12,7 @@
   "dependencies": {
     "@chakra-ui/avatar": "^2.3.0",
     "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/layout": "^2.3.1",
     "@chakra-ui/react": "^2.8.2",
     "@chakra-ui/tooltip": "^2.3.1",
     "@emotion/react": "^11.11.4",
@@ -19,6 +20,8 @@
     "axios": "^1.7.2",
     "firebase": "^10.11.0",
     "framer-motion": "^11.1.7",
+    "i": "^0.3.7",
+    "npm": "^10.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",

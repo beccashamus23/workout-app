@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import YouTube from "react-youtube";
+import { Button, Flex, Input } from "@chakra-ui/react";
+import { FaYoutube } from "react-icons/fa";
 
 const Videos: React.FC = () => {
   const [query, setQuery] = useState<string>("");
@@ -43,23 +45,26 @@ const Videos: React.FC = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="video"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <button className="customButton" onClick={fetchVideos}>
-        Search Videos
-      </button>
-      <div className="video-list">{renderVideoList()}</div>
+    <Flex gap={3} direction={"column"}>
+      <Flex gap={3}>
+        <FaYoutube size={56} />
+        <Input
+          type="text"
+          placeholder="search videos..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button className="customButton" onClick={fetchVideos} fontWeight={10}>
+          go
+        </Button>
+      </Flex>
+      <Flex>{renderVideoList()}</Flex>
       {selected && (
         <>
           <YouTube videoId={selected.id.videoId} />
         </>
       )}
-    </div>
+    </Flex>
   );
 };
 

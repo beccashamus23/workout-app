@@ -10,7 +10,7 @@ type PostProps = {
 
 const Post = ({ username, imgUrl, avatar }: PostProps) => {
   return (
-    <Flex w={550} direction={"column"}>
+    <Flex w={"auto"} direction={"column"}>
       <PostHeader username={username} avatar={avatar} />
       <Image src={imgUrl} overflow={"hidden"} w={"auto"} h={"auto"} />
       <PostFooter username={username} />

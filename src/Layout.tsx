@@ -5,13 +5,18 @@ import { useLocation } from "react-router-dom";
 const Layout = ({ children }: any) => {
   const { pathname } = useLocation();
   return (
-    <Flex>
+    <Flex borderRadius={"1px"}>
       {pathname !== "/auth" ? (
-        <Box>
+        <Box pl={3}>
           <SideBar />
         </Box>
       ) : null}
-      <Box>{children}</Box>
+      <Box w={"full"} h={"full"} alignItems={"center"}>
+        {children}
+      </Box>
+      <Box w={"100px"}>
+        <Flex />
+      </Box>
     </Flex>
   );
 };

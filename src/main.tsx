@@ -16,8 +16,8 @@ const fonts = {
 const styles = {
   global: (props: any) => ({
     body: {
-      bg: mode("gray.900", "#000")(props),
-      color: mode("whiteAlpha.100", "whiteAlpha.600")(props),
+      bg: mode("gray.800", "#000")(props),
+      color: mode("gray.800", "gray.800")(props),
     },
   }),
 };

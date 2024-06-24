@@ -6,7 +6,7 @@ import { Tooltip } from "@chakra-ui/react";
 import {
   FaHome,
   FaUser,
-  FaSafari,
+  FaMapMarkerAlt,
   FaFlagCheckered,
   FaDumbbell,
 } from "react-icons/fa";
@@ -62,20 +62,20 @@ const SideBar = () => {
         </Link>
         <Link
           display={"flex"}
-          to={"/"}
+          to={"/explore"}
           as={RouterLink}
           _hover={{ color: "blue.500" }}
           transition={"0.2s ease-in-out"}
         >
           <Tooltip placement="right" label="EXPLORE" aria-label="A tooltip">
             <span>
-              <FaSafari />
+              <FaMapMarkerAlt />
             </span>
           </Tooltip>
         </Link>
         <Link
           display={"flex"}
-          to={"/Goals"}
+          to={"/"}
           as={RouterLink}
           _hover={{ color: "blue.500" }}
           transition={"0.2s ease-in-out"}
