@@ -1,6 +1,6 @@
 import profpic from "../../../public/postExample2.png";
 import logo from "../../../public/logo.png";
-import { Link, Box, Image, Flex, Avatar } from "@chakra-ui/react";
+import { Link, Image, Flex, Avatar } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { Tooltip } from "@chakra-ui/react";
 import {
@@ -49,7 +49,7 @@ const SideBar = () => {
         </Link>
         <Link
           display={"flex"}
-          to={"/"}
+          to={"/Profile"}
           as={RouterLink}
           _hover={{ color: "blue.500" }}
           transition={"0.2s ease-in-out"}
