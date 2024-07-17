@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import YouTube from "react-youtube";
 import { Button, Flex, Input } from "@chakra-ui/react";
-import { FaYoutube } from "react-icons/fa";
 
 const Videos: React.FC = () => {
   const [query, setQuery] = useState<string>("");
@@ -47,10 +46,9 @@ const Videos: React.FC = () => {
   return (
     <Flex gap={3} direction={"column"}>
       <Flex gap={3}>
-        <FaYoutube size={56} />
         <Input
           type="text"
-          placeholder="search videos..."
+          placeholder="search youtube..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

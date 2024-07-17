@@ -1,0 +1,71 @@
+{
+    "name": "get_workout",
+    "description": "Determine the quality of this workout",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "workouts": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "description": "date in format YYYY-MM-DD"
+                    },
+                    "workoutName": {
+                        "type": "string",
+                        "description": "user workout goal e.g. build muscle, improve endurance, reach a specific benchmark"
+                    },
+                    "exercises": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "name of exercise, ex: bench press"
+                                },
+                                "sets": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "set_number": {
+                                                "type": "number",
+                                                "description": "number of sets"
+                                            },
+                                            "weight": {
+                                                "type": "number",
+                                                "description": "weight in lbs"
+                                            },
+                                            "reps": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "rep_number": {
+                                                            "type": "number",
+                                                            "description": "current repetition in set of repetitions"
+                                                        },
+                                                        "velocity": {
+                                                            "type": "number",
+                                                            "description": "a number from 0-1 that measures velocity of rep"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "date",
+                    "workoutName",
+                    "exercises"
+                ]
+            }
+        }
+    }
+}

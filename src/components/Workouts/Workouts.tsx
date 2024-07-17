@@ -1,9 +1,10 @@
 import React from "react";
 import { Text, Flex, Input } from "@chakra-ui/react";
-import { FaYoutube } from "react-icons/fa";
+//import { FaYoutube } from "react-icons/fa";
+import Videos from "./Videos";
+import Assistant from "./Assistant";
 
 const Workouts: React.FC = () => {
-  const search = (e: string) => {};
   return (
     <Flex
       alignItems={"center"}
@@ -16,12 +17,9 @@ const Workouts: React.FC = () => {
         WORKOUTS
       </Text>
       <Flex gap={3} alignItems={"center"}>
-        <FaYoutube size={56} />
-        <Input
-          placeholder="search videos..."
-          onChange={(e) => search(e.target.value)}
-        />
+        <Videos />
       </Flex>
+      <Assistant />
     </Flex>
   );
 };
